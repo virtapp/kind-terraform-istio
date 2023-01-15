@@ -18,6 +18,7 @@ resource "helm_release" "metallb" {
       addresses:
       # - ${cidrhost(data.external.subnet.result.Subnet, 150)}-${cidrhost(data.external.subnet.result.Subnet, 200)}
       # for mac
+      #- 172.18.255.1-172.18.255.250
       - 127.0.0.1/32
   EOF
   ]
